@@ -12,7 +12,7 @@ import torch
 
 torch.classes.__path__ = []
 
-FASTAPI_URL = "http://127.0.0.1:8000/upload"
+FASTAPI_URL = "https://english-compliance-checker.onrender.com/upload"
 UPLOAD_FOLDER = "uploaded_files"
 MODIFIED_FOLDER = "modified_documents"
 os.makedirs(MODIFIED_FOLDER, exist_ok=True)
