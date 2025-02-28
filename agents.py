@@ -43,10 +43,10 @@ def read_document(file_path):
     """Determines file type and extracts text accordingly."""
     if file_path.endswith(".pdf"):
         return extract_pdf_text(file_path)
-    elif file_path.endswith(".docx"):
+    if file_path.endswith(".docx"):
         return extract_docx_text(file_path)
-    else:
-        raise ValueError("Unsupported file format")
+    
+    raise ValueError("Unsupported file format")
 
 def initialize_agents():
     """Initializes Autogen agents configured with the Groq API."""
@@ -130,5 +130,4 @@ def handle_file_processing(filename, directory="uploads", apply_rewrite=False):
     
     if filename.endswith(".pdf") or filename.endswith(".docx"):
         return {filename: analyze_document(full_path, apply_rewrite)}
-    else:
-        raise ValueError("Invalid file type")
+    raise ValueError("Invalid file type")

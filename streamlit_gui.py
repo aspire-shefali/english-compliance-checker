@@ -80,7 +80,7 @@ if uploaded_file:
     st.markdown("""<p style='text-align: center;'>Processing file... Please wait.</p>""", unsafe_allow_html=True)
     
     files = {"uploaded_file": (uploaded_file.name, uploaded_file.getbuffer(), uploaded_file.type)}
-    response = requests.post(FASTAPI_URL, files=files)
+    response = requests.post(FASTAPI_URL, files=files, timeout=60)
     
     if response.status_code == 200:
         st.success(f"File '{uploaded_file.name}' uploaded successfully!")
