@@ -5,11 +5,6 @@ The **English Document Compliance Checker** is an AI-powered tool designed to ev
 
 After the compliance check, the tool provides a detailed report highlighting any violations. Users can accept suggested modifications, ensuring their document meets the required standards. The updated file with corrected English structure can then be downloaded for further use.
 
-## How It Works
-1. **Upload a Document**: Users upload a PDF or DOCX file via the Streamlit interface.
-2. **AI Analysis**: The system evaluates grammar, clarity, and structural accuracy, generating a compliance report.
-3. **Review & Modify**: Users review the report and request AI-driven modifications.
-4. **Download Final Document**: The refined document can be downloaded in the preferred format.
 
 ## Setup Instructions
 ### 1. Set Up a Virtual Environment
