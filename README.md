@@ -23,7 +23,7 @@ python upload_document.py
 streamlit run streamlit_gui.py
 
 ## Launch the Deployed APP and upload your Docx/Pdf File...!!
-[App Link](https://english-compliance-checker-3gbhfk9sfckw9kb9a6fhh5.streamlit.app/)
+[App Link](https://english-compliance-checker-3mh636pu2hup7yzezdyd72.streamlit.app/)
 
 
 
